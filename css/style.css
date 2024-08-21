@@ -1,0 +1,168 @@
+/* Importação das fontes Bebas Neue e Montserrat diretamente do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background:#FFD400;
+}
+
+/* Estiliza o link */
+a{
+  text-decoration: none;
+  color: #FFD400;
+}
+
+/* Cria o círculo azul da carta */
+#circle {
+  height:40px;
+  width:40px;
+  background: #003768;
+  border:1px solid #003768;
+  border-radius:50px;
+  position:absolute;
+  top:-35px;
+  z-index:40;
+  right:-20px;
+}
+
+/* Estiliza as divs para o menu ficar centralizado */
+#container {
+  width:0px;
+  height:0px;
+  border-left: 300px solid transparent;
+  border-right:300px solid transparent;
+  border-top: 300px solid transparent;
+  position:relative;
+  margin:auto;
+  top:5px;
+  left:2px;
+}
+
+/* Deixa o título centralizado e estilizado */
+#title {
+  position:relative;
+  bottom:330px;
+  right:300px;
+  height:50px;
+  width:600px;
+  background:#003768;
+  text-align:center;
+  font-size:40px;
+  background-size: 1px 300%;
+  color:#FFD400;
+  font-family:"Bebas Neue";
+}
+
+/* Estliza os botões para quando o cursor estiver em cima deles */
+#game:hover {
+  background:#003768;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+}
+
+#credits:hover {
+  background:#003768;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+}
+
+#instructions:hover {
+  background:#003768;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+}
+
+/* Estilização da parte esquerda da carta */
+#left {
+  height:100px;
+  width:600px;
+  background:#FFD400;
+  position:absolute;
+  z-index:6;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  top:-175px;
+  right:-104px;
+  border-top:3px solid #003768;
+}
+
+/* Estilização da parte direita da carta */
+#right {
+  height:100px;
+  width:600px;
+  background:#FFD400;
+  position:absolute;
+  top:-229px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  z-index:7;
+  left:-56px;
+  border-top:3px solid #003768;
+}
+
+/* Daqui para baixo é apenas estilização dos botões */
+#game {
+  height:50px;
+  width:500px;
+  background:#007EC8;
+  position:relative;
+  bottom:345px;
+  right:240px;
+  text-align:center;
+  font-size: 25px;
+  font-family: "Montserrat";
+  color:#FFD400;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+#game p {
+  position:relative;
+  top:0px;
+  right:9px;
+}
+
+#instructions {
+  height:50px;
+  width:400px;
+  background:#007EC8;
+  position:relative;
+  bottom:360px;
+  right:200px;
+  font-size:25px;
+  text-align:center;
+  font-family: "Montserrat";
+  color:#FFD400;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+
+#instructions p {
+  position:relative;
+  top:0px;
+  right:4px;
+}
+
+#credits {
+  height:50px;
+  width:300px;
+  position:relative;
+  background:#007EC8;
+  bottom:375px;
+  font-size:25px;
+  right:150px;
+  text-align:center;
+  font-family: "Montserrat";
+  color:#FFD400;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+#credits p {
+  position:relative;
+  top:0px;
+}
